@@ -1,0 +1,58 @@
+#cabecalho_container{
+    background: chartreuse;
+    width: 100%;
+}
+
+#logo{
+    margin: 0px;
+    padding: 30px 0px 30px 90px;
+    font-size: 30px;
+
+}
+
+#ul_container{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding-right: 60px;
+    #config{
+        margin: 0px 10px 0px 0px;
+        list-style: none;
+    }
+}
+
+#cabecalho_content{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#performace_container{
+    display: flex;
+    width: 100%;
+    height: 600px;    
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#performace{
+    animation-name: girando;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 60px;
+    height: 120px;
+    
+    
+    @keyframes girando{
+        0%{transform:rotate(0deg); width: 120px; height: 240px; border-radius: 50%;}
+        50%{transform:rotate(180deg); width: 120px; height: 240px; border-radius: 50%;}
+        100%{transform:rotate(360deg); width: 120px; height: 240px; border-radius: 50%;}
+    }
+    
+}
